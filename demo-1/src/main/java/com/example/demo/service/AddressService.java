@@ -33,7 +33,6 @@ public class AddressService {
         Address address = addressRepository.findById(id).orElseThrow(() -> new RuntimeException("Address not found"));
         address.setStreet(addressDetails.getStreet());
         address.setCity(addressDetails.getCity());
-        // Update other fields as necessary
         Address updatedAddress = addressRepository.save(address);
         logger.info("Address updated successfully: {}", updatedAddress);
         return updatedAddress;

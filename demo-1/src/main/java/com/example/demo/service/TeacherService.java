@@ -32,7 +32,6 @@ public class TeacherService {
         logger.info("Updating teacher with ID: {} with details: {}", id, teacherDetails);
         Teacher teacher = teacherRepository.findById(id).orElseThrow(() -> new RuntimeException("Teacher not found"));
         teacher.setName(teacherDetails.getName());
-        // Update other fields as necessary
         Teacher updatedTeacher = teacherRepository.save(teacher);
         logger.info("Teacher updated successfully: {}", updatedTeacher);
         return updatedTeacher;

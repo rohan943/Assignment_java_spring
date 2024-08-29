@@ -37,7 +37,6 @@ public class StudentService {
         logger.info("Updating student with ID: {} with details: {}", id, studentDetails);
         Student student = studentRepository.findById(id).orElseThrow(() -> new RuntimeException("Student not found"));
         student.setName(studentDetails.getName());
-        // Update other fields as necessary
         Student updatedStudent = studentRepository.save(student);
         logger.info("Student updated successfully: {}", updatedStudent);
         return updatedStudent;
