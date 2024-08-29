@@ -1,4 +1,9 @@
 package com.example.demo.entity;
+
+
+import java.util.HashSet;
+import java.util.Set;
+
 import jakarta.persistence.*;
 
 import jakarta.persistence.Entity;
@@ -8,23 +13,24 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
+
+
 @Entity
 public class Address {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String street;
-    private String city;
 
-    @ManyToOne
-    @JoinColumn(name = "student_id")
-    private Student student;
+    private String city;
 
     @ManyToOne
     @JoinColumn(name = "teacher_id")
     private Teacher teacher;
+
+    @OneToMany(mappedBy = "address")
+    private Set<Student> students = new HashSet<>();
 
 	public Long getId() {
 		return id;
@@ -50,20 +56,20 @@ public class Address {
 		this.city = city;
 	}
 
-	public Student getStudent() {
-		return student;
-	}
-
-	public void setStudent(Student student) {
-		this.student = student;
-	}
-
 	public Teacher getTeacher() {
 		return teacher;
 	}
 
 	public void setTeacher(Teacher teacher) {
 		this.teacher = teacher;
+	}
+
+	public Set<Student> getStudents() {
+		return students;
+	}
+
+	public void setStudents(Set<Student> students) {
+		this.students = students;
 	}
 
     // Getters and Setters

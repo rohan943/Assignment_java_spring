@@ -9,12 +9,11 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.JoinColumn;
-
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
 public class Student {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -22,15 +21,14 @@ public class Student {
     private String name;
 
     @ManyToMany
-    @JoinTable(
-        name = "student_teacher",
-        joinColumns = @JoinColumn(name = "student_id"),
-        inverseJoinColumns = @JoinColumn(name = "teacher_id")
-    )
-    private Set<Teacher> teachers;
+    @JoinTable(name = "student_teacher",
+               joinColumns = @JoinColumn(name = "student_id"),
+               inverseJoinColumns = @JoinColumn(name = "teacher_id"))
+    private Set<Teacher> teachers = new HashSet<>();
 
-    @OneToMany(mappedBy = "student")
-    private Set<Address> addresses;
+    @ManyToOne
+    @JoinColumn(name = "address_id")
+    private Address address;
 
 	public Long getId() {
 		return id;
@@ -56,13 +54,13 @@ public class Student {
 		this.teachers = teachers;
 	}
 
-	public Set<Address> getAddresses() {
-		return addresses;
+	public Address getAddress() {
+		return address;
 	}
 
-	public void setAddresses(Set<Address> addresses) {
-		this.addresses = addresses;
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 
-    // Getters and Setters
+   
 }

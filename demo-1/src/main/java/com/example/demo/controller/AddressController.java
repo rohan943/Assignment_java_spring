@@ -1,144 +1,50 @@
 package com.example.demo.controller;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import com.example.demo.entity.Address;
-import com.example.demo.entity.Student;
-import com.example.demo.entity.Teacher;
-import com.example.demo.repository.AddressRepository;
-import com.example.demo.repository.StudentRepository;
-import com.example.demo.repository.TeacherRepository;
+import com.example.demo.entity.ApiResponse;
+import com.example.demo.service.AddressService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 @RestController
 @RequestMapping("/addresses")
 public class AddressController {
 
-    @Autowired
-    private AddressRepository addressRepository;
+    private static final Logger logger = LoggerFactory.getLogger(AddressController.class);
 
     @Autowired
-    private StudentRepository studentRepository;
+    private AddressService addressService;
 
-    @Autowired
-    private TeacherRepository teacherRepository;
-
-    @PostMapping("/add")
-    public ResponseEntity<?> addAddress(@RequestBody AddressRequest addressRequest) {
-        try {
-            Address address = new Address();
-            address.setStreet(addressRequest.getStreet());
-            address.setCity(addressRequest.getCity());
-
-            if (addressRequest.getStudentId() != null) {
-                Student student = studentRepository.findById(addressRequest.getStudentId())
-                        .orElseThrow(() -> new RuntimeException("Student not found"));
-                address.setStudent(student);
-            }
-
-            if (addressRequest.getTeacherId() != null) {
-                Teacher teacher = teacherRepository.findById(addressRequest.getTeacherId())
-                        .orElseThrow(() -> new RuntimeException("Teacher not found"));
-                address.setTeacher(teacher);
-            }
-
-            Address savedAddress = addressRepository.save(address);
-            return ResponseEntity.status(HttpStatus.CREATED).body(savedAddress);
-        } catch (RuntimeException e) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ErrorResponse(e.getMessage()));
-        }
+    @PostMapping
+    public ResponseEntity<ApiResponse<Address>> addAddress(@RequestBody Address address) {
+        Address savedAddress = addressService.addAddress(address);
+        ApiResponse<Address> response = new ApiResponse<>("Address added successfully", savedAddress, true);
+        return ResponseEntity.ok(response);
     }
-    
-    @PutMapping("/{id}")
-    public ResponseEntity<?> updateAddress(@PathVariable Long id, @RequestBody AddressRequest addressRequest) {
-        try {
-            Address address = addressRepository.findById(id)
-                    .orElseThrow(() -> new RuntimeException("Address not found"));
 
-            address.setStreet(addressRequest.getStreet());
-            address.setCity(addressRequest.getCity());
-
-            Address updatedAddress = addressRepository.save(address);
-            return ResponseEntity.ok(updatedAddress);
-        } catch (RuntimeException e) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ErrorResponse(e.getMessage()));
-        }
-    }
-    
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> deleteAddress(@PathVariable Long id) {
-        try {
-            Address address = addressRepository.findById(id)
-                    .orElseThrow(() -> new RuntimeException("Address not found"));
-
-            addressRepository.delete(address);
-            return ResponseEntity.ok(new SuccessResponse("Address deleted successfully"));
-        } catch (RuntimeException e) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ErrorResponse(e.getMessage()));
-        }
+    public ResponseEntity<ApiResponse<Void>> deleteAddress(@PathVariable Long id) {
+        addressService.deleteAddress(id);
+        ApiResponse<Void> response = new ApiResponse<>("Address deleted successfully", true);
+        return ResponseEntity.ok(response);
     }
 
-    public static class SuccessResponse {
-        private String message;
-
-        public SuccessResponse(String message) {
-            this.message = message;
-        }
-
-        // Getter
-        public String getMessage() {
-            return message;
-        }
+    @PutMapping("/{id}")
+    public ResponseEntity<ApiResponse<Address>> updateAddress(@PathVariable Long id, @RequestBody Address address) {
+        Address updatedAddress = addressService.updateAddress(id, address);
+        ApiResponse<Address> response = new ApiResponse<>("Address updated successfully", updatedAddress, true);
+        return ResponseEntity.ok(response);
     }
-
-
-
-    // Other methods (update, delete) here
-
-    public static class AddressRequest {
-        private String street;
-        private String city;
-        private Long studentId;
-        private Long teacherId;
-		public String getStreet() {
-			return street;
-		}
-		public void setStreet(String street) {
-			this.street = street;
-		}
-		public String getCity() {
-			return city;
-		}
-		public void setCity(String city) {
-			this.city = city;
-		}
-		public Long getStudentId() {
-			return studentId;
-		}
-		public void setStudentId(Long studentId) {
-			this.studentId = studentId;
-		}
-		public Long getTeacherId() {
-			return teacherId;
-		}
-		public void setTeacherId(Long teacherId) {
-			this.teacherId = teacherId;
-		}
-
-        // Getters and Setters
-    }
-
-    public static class ErrorResponse {
-        private String error;
-
-        public ErrorResponse(String error) {
-            this.error = error;
-        }
-
-        // Getter
-        public String getError() {
-            return error;
-        }
+    
+    @GetMapping("/{id}")
+    public ResponseEntity<ApiResponse<Address>> getAddress(@PathVariable Long id) {
+        Address address = addressService.getAddressById(id);
+        ApiResponse<Address> response = new ApiResponse<>("Address retrieved successfully", address, true);
+        return ResponseEntity.ok(response);
     }
 }
+
+

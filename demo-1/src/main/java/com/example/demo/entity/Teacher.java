@@ -7,12 +7,11 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
-
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
 public class Teacher {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -20,10 +19,10 @@ public class Teacher {
     private String name;
 
     @ManyToMany(mappedBy = "teachers")
-    private Set<Student> students;
+    private Set<Student> students = new HashSet<>();
 
     @OneToMany(mappedBy = "teacher")
-    private Set<Address> addresses;
+    private Set<Address> addresses = new HashSet<>();
 
 	public Long getId() {
 		return id;
