@@ -20,8 +20,8 @@ public class Teacher {
     
     private String name;
     
-    @ManyToMany(mappedBy = "teachers")
-    private Set<Student> students;
+//    @ManyToMany(mappedBy = "teachers")
+//    private Set<Student> students;
     
     @OneToMany(mappedBy = "teacher")
     private Set<Address> addresses;
@@ -42,13 +42,13 @@ public class Teacher {
 		this.name = name;
 	}
 
-	public Set<Student> getStudents() {
-		return students;
-	}
-
-	public void setStudents(Set<Student> students) {
-		this.students = students;
-	}
+//	public Set<Student> getStudents() {
+//		return students;
+//	}
+//
+//	public void setStudents(Set<Student> students) {
+//		this.students = students;
+//	}
 
 	public Set<Address> getAddresses() {
 		return addresses;
@@ -60,4 +60,3 @@ public class Teacher {
 
     
 }
-

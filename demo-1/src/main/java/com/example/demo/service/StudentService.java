@@ -1,8 +1,11 @@
 package com.example.demo.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.example.demo.entity.Address;
 import com.example.demo.entity.Student;
 import com.example.demo.entity.Teacher;
+import com.example.demo.repository.AddressRepository;
 import com.example.demo.repository.StudentRepository;
 import com.example.demo.repository.TeacherRepository;
 import org.slf4j.Logger;
@@ -19,6 +22,10 @@ public class StudentService {
 
     @Autowired
     private TeacherRepository teacherRepository;
+    
+
+    @Autowired
+    private AddressRepository addressRepository;
 
     public Student enrollStudent(Student student) {
         logger.info("Enrolling student: {}", student);
