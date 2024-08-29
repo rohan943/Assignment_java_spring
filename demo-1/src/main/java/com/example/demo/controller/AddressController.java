@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.example.demo.entity.Address;
@@ -27,9 +28,14 @@ public class AddressController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<ApiResponse<Void>> deleteAddress(@PathVariable Long id) {
-        addressService.deleteAddress(id);
-        ApiResponse<Void> response = new ApiResponse<>("Address deleted successfully", true);
-        return ResponseEntity.ok(response);
+        boolean isDeleted = addressService.deleteAddress(id);
+        if (isDeleted) {
+            ApiResponse<Void> response = new ApiResponse<>("Address deleted successfully", true);
+            return ResponseEntity.ok(response);
+        } else {
+            ApiResponse<Void> response = new ApiResponse<>("Address not found", false);
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(response);
+        }
     }
 
     @PutMapping("/{id}")

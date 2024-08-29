@@ -418,3 +418,959 @@ insert into student (address_id,name,id) values (?,?,default) [23506-224]
 2024-08-29T10:29:39.465+05:30  INFO 29192 --- [demo-1] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-08-29T10:29:39.467+05:30  INFO 29192 --- [demo-1] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-08-29T10:29:39.469+05:30  INFO 29192 --- [demo-1] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T10:35:57.723+05:30  INFO 3424 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 3424 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T10:35:57.729+05:30  INFO 3424 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T10:35:58.435+05:30  INFO 3424 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T10:35:58.504+05:30  INFO 3424 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 3 JPA repository interfaces.
+2024-08-29T10:35:58.754+05:30  WARN 3424 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T10:35:58.798+05:30  INFO 3424 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T10:35:59.052+05:30  INFO 3424 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T10:35:59.063+05:30  INFO 3424 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T10:35:59.063+05:30  INFO 3424 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T10:35:59.124+05:30  INFO 3424 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T10:35:59.125+05:30  INFO 3424 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1328 ms
+2024-08-29T10:35:59.156+05:30  INFO 3424 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T10:35:59.349+05:30  INFO 3424 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T10:35:59.358+05:30  INFO 3424 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T10:35:59.372+05:30  INFO 3424 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T10:35:59.501+05:30  INFO 3424 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T10:35:59.558+05:30  INFO 3424 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T10:35:59.597+05:30  INFO 3424 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T10:35:59.885+05:30  INFO 3424 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T10:35:59.927+05:30  WARN 3424 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T10:36:00.753+05:30  INFO 3424 --- [demo-1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T10:36:00.840+05:30  INFO 3424 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T10:36:01.117+05:30  WARN 3424 --- [demo-1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T10:36:01.466+05:30  INFO 3424 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T10:36:01.478+05:30  INFO 3424 --- [demo-1] [main] com.example.demo.Demo1Application        : Started Demo1Application in 4.192 seconds (process running for 4.96)
+2024-08-29T10:36:13.192+05:30  INFO 3424 --- [demo-1] [http-nio-8080-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T10:36:13.192+05:30  INFO 3424 --- [demo-1] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T10:36:13.194+05:30  INFO 3424 --- [demo-1] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-29T10:36:13.415+05:30  INFO 3424 --- [demo-1] [http-nio-8080-exec-8] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@15be0446
+2024-08-29T10:36:13.581+05:30  INFO 3424 --- [demo-1] [http-nio-8080-exec-8] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@15be0446
+2024-08-29T10:36:24.509+05:30  INFO 3424 --- [demo-1] [http-nio-8080-exec-3] c.example.demo.service.StudentService    : Deleting student with ID: 1
+2024-08-29T10:36:24.586+05:30  INFO 3424 --- [demo-1] [http-nio-8080-exec-3] c.example.demo.service.StudentService    : Student deleted successfully with ID: 1
+2024-08-29T10:36:36.087+05:30  WARN 3424 --- [demo-1] [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-08-29T10:36:44.505+05:30  INFO 3424 --- [demo-1] [http-nio-8080-exec-9] c.example.demo.service.StudentService    : Deleting student with ID: 1
+2024-08-29T10:36:44.507+05:30  INFO 3424 --- [demo-1] [http-nio-8080-exec-9] c.example.demo.service.StudentService    : Student deleted successfully with ID: 1
+2024-08-29T10:36:55.182+05:30  INFO 3424 --- [demo-1] [http-nio-8080-exec-7] c.example.demo.service.StudentService    : Deleting student with ID: 1
+2024-08-29T10:36:55.184+05:30  INFO 3424 --- [demo-1] [http-nio-8080-exec-7] c.example.demo.service.StudentService    : Student deleted successfully with ID: 1
+2024-08-29T10:39:15.797+05:30  INFO 3424 --- [demo-1] [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-29T10:39:15.835+05:30  INFO 3424 --- [demo-1] [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T10:39:15.838+05:30  INFO 3424 --- [demo-1] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T10:39:15.840+05:30  INFO 3424 --- [demo-1] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T10:39:24.435+05:30  INFO 32048 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 32048 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T10:39:24.438+05:30  INFO 32048 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T10:39:25.100+05:30  INFO 32048 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T10:39:25.169+05:30  INFO 32048 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 3 JPA repository interfaces.
+2024-08-29T10:39:25.424+05:30  WARN 32048 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T10:39:25.464+05:30  INFO 32048 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T10:39:25.695+05:30  INFO 32048 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T10:39:25.706+05:30  INFO 32048 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T10:39:25.706+05:30  INFO 32048 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T10:39:25.771+05:30  INFO 32048 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T10:39:25.771+05:30  INFO 32048 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1277 ms
+2024-08-29T10:39:25.811+05:30  INFO 32048 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T10:39:25.984+05:30  INFO 32048 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T10:39:25.986+05:30  INFO 32048 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T10:39:25.998+05:30  INFO 32048 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T10:39:26.138+05:30  INFO 32048 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T10:39:26.197+05:30  INFO 32048 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T10:39:26.234+05:30  INFO 32048 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T10:39:26.523+05:30  INFO 32048 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T10:39:26.563+05:30  WARN 32048 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T10:39:27.403+05:30  INFO 32048 --- [demo-1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T10:39:27.492+05:30  INFO 32048 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T10:39:27.759+05:30  WARN 32048 --- [demo-1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T10:39:28.114+05:30  INFO 32048 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T10:39:28.125+05:30  INFO 32048 --- [demo-1] [main] com.example.demo.Demo1Application        : Started Demo1Application in 4.178 seconds (process running for 4.935)
+2024-08-29T10:39:38.226+05:30  INFO 32048 --- [demo-1] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T10:39:38.226+05:30  INFO 32048 --- [demo-1] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T10:39:38.228+05:30  INFO 32048 --- [demo-1] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-29T10:39:44.887+05:30  INFO 32048 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@3f91dc59
+2024-08-29T10:39:45.064+05:30  INFO 32048 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@3f91dc59
+2024-08-29T10:39:53.583+05:30  INFO 32048 --- [demo-1] [http-nio-8080-exec-5] c.example.demo.service.StudentService    : Deleting student with ID: 1
+2024-08-29T10:39:53.672+05:30  INFO 32048 --- [demo-1] [http-nio-8080-exec-5] c.example.demo.service.StudentService    : Student deleted successfully with ID: 1
+2024-08-29T10:39:56.244+05:30  INFO 32048 --- [demo-1] [http-nio-8080-exec-8] c.example.demo.service.StudentService    : Deleting student with ID: 1
+2024-08-29T10:39:56.247+05:30  INFO 32048 --- [demo-1] [http-nio-8080-exec-8] c.example.demo.service.StudentService    : Student deleted successfully with ID: 1
+2024-08-29T10:51:15.108+05:30  INFO 32048 --- [demo-1] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-29T10:51:15.135+05:30  INFO 32048 --- [demo-1] [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T10:51:15.137+05:30  INFO 32048 --- [demo-1] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T10:51:15.139+05:30  INFO 32048 --- [demo-1] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T10:51:22.717+05:30  INFO 20288 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 20288 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T10:51:22.719+05:30  INFO 20288 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T10:51:23.213+05:30  INFO 20288 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T10:51:23.259+05:30  INFO 20288 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2024-08-29T10:51:23.481+05:30  WARN 20288 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T10:51:23.517+05:30  INFO 20288 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T10:51:23.723+05:30  INFO 20288 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T10:51:23.732+05:30  INFO 20288 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T10:51:23.732+05:30  INFO 20288 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T10:51:23.781+05:30  INFO 20288 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T10:51:23.781+05:30  INFO 20288 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1025 ms
+2024-08-29T10:51:23.805+05:30  INFO 20288 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T10:51:23.941+05:30  INFO 20288 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T10:51:23.942+05:30  INFO 20288 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T10:51:23.951+05:30  INFO 20288 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T10:51:24.063+05:30  INFO 20288 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T10:51:24.109+05:30  INFO 20288 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T10:51:24.140+05:30  INFO 20288 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T10:51:24.349+05:30  INFO 20288 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T10:51:24.380+05:30  WARN 20288 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T10:51:25.058+05:30  INFO 20288 --- [demo-1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T10:51:25.122+05:30  INFO 20288 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T10:51:25.351+05:30  WARN 20288 --- [demo-1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T10:51:25.647+05:30  INFO 20288 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T10:51:25.656+05:30  INFO 20288 --- [demo-1] [main] com.example.demo.Demo1Application        : Started Demo1Application in 3.318 seconds (process running for 3.893)
+2024-08-29T10:52:21.480+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T10:52:21.480+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T10:52:21.482+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T10:52:21.602+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-5] c.example.demo.service.AddressService    : Adding address: com.example.demo.entity.Address@55f0d18d
+2024-08-29T10:52:21.686+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-5] c.example.demo.service.AddressService    : Address added successfully: com.example.demo.entity.Address@55f0d18d
+2024-08-29T10:54:43.273+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-10] c.example.demo.service.AddressService    : Updating address with ID: 2 with details: com.example.demo.entity.Address@4674395f
+2024-08-29T10:54:52.130+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-2] c.example.demo.service.AddressService    : Adding address: com.example.demo.entity.Address@a6bdc85
+2024-08-29T10:54:52.134+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-2] c.example.demo.service.AddressService    : Address added successfully: com.example.demo.entity.Address@a6bdc85
+2024-08-29T10:55:18.935+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-5] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@7141759a
+2024-08-29T10:55:18.939+05:30  WARN 20288 --- [demo-1] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23506, SQLState: 23506
+2024-08-29T10:55:18.940+05:30 ERROR 20288 --- [demo-1] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Referential integrity constraint violation: "FKCAF6HT0HFW93LWC13NY0SDMVO: PUBLIC.STUDENT FOREIGN KEY(ADDRESS_ID) REFERENCES PUBLIC.ADDRESS(ID) (CAST(1 AS BIGINT))"; SQL statement:
+insert into student (address_id,name,id) values (?,?,default) [23506-224]
+2024-08-29T10:55:55.665+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-3] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@1ffbb306
+2024-08-29T10:55:55.668+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-3] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@1ffbb306
+2024-08-29T10:56:48.822+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-8] c.example.demo.service.StudentService    : Updating student with ID: 1 with details: com.example.demo.entity.Student@61a61d57
+2024-08-29T10:57:24.167+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-7] c.example.demo.service.StudentService    : Updating student with ID: 2 with details: com.example.demo.entity.Student@5cb52692
+2024-08-29T10:57:24.185+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-7] c.example.demo.service.StudentService    : Student updated successfully: com.example.demo.entity.Student@1b3388fe
+2024-08-29T10:57:52.406+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.StudentService    : Updating student with ID: 2 with details: com.example.demo.entity.Student@6ab6e4ce
+2024-08-29T10:57:52.409+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.StudentService    : Student updated successfully: com.example.demo.entity.Student@51024e0f
+2024-08-29T10:59:17.173+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-5] c.example.demo.service.StudentService    : Deleting student with ID: 2
+2024-08-29T10:59:17.178+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-5] c.example.demo.service.StudentService    : Student deleted successfully with ID: 2
+2024-08-29T11:00:32.967+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-10] c.example.demo.service.AddressService    : Adding address: com.example.demo.entity.Address@3ed1088b
+2024-08-29T11:00:32.969+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-10] c.example.demo.service.AddressService    : Address added successfully: com.example.demo.entity.Address@3ed1088b
+2024-08-29T11:01:06.010+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-7] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@5f2f7ed8
+2024-08-29T11:01:06.012+05:30  INFO 20288 --- [demo-1] [http-nio-8080-exec-7] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@5f2f7ed8
+2024-08-29T11:03:59.536+05:30  INFO 20288 --- [demo-1] [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-29T11:03:59.568+05:30  INFO 20288 --- [demo-1] [RMI TCP Connection(16)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T11:03:59.571+05:30  INFO 20288 --- [demo-1] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T11:03:59.572+05:30  INFO 20288 --- [demo-1] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T11:04:08.402+05:30  INFO 10296 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 10296 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T11:04:08.405+05:30  INFO 10296 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T11:04:08.903+05:30  INFO 10296 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T11:04:08.955+05:30  INFO 10296 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2024-08-29T11:04:09.168+05:30  WARN 10296 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T11:04:09.201+05:30  INFO 10296 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T11:04:09.392+05:30  INFO 10296 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T11:04:09.401+05:30  INFO 10296 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T11:04:09.402+05:30  INFO 10296 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T11:04:09.450+05:30  INFO 10296 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T11:04:09.451+05:30  INFO 10296 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1012 ms
+2024-08-29T11:04:09.476+05:30  INFO 10296 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T11:04:09.614+05:30  INFO 10296 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T11:04:09.615+05:30  INFO 10296 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T11:04:09.623+05:30  INFO 10296 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T11:04:09.728+05:30  INFO 10296 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T11:04:09.767+05:30  INFO 10296 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T11:04:09.794+05:30  INFO 10296 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T11:04:10.010+05:30  INFO 10296 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T11:04:10.044+05:30  WARN 10296 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T11:04:10.783+05:30  INFO 10296 --- [demo-1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T11:04:10.866+05:30  INFO 10296 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T11:04:11.095+05:30  WARN 10296 --- [demo-1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T11:04:11.485+05:30  INFO 10296 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T11:04:11.494+05:30  INFO 10296 --- [demo-1] [main] com.example.demo.Demo1Application        : Started Demo1Application in 3.498 seconds (process running for 4.12)
+2024-08-29T11:04:23.118+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T11:04:23.120+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T11:04:23.120+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-08-29T11:04:23.251+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-1] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@64bb8299
+2024-08-29T11:04:23.294+05:30  WARN 10296 --- [demo-1] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23506, SQLState: 23506
+2024-08-29T11:04:23.295+05:30 ERROR 10296 --- [demo-1] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Referential integrity constraint violation: "FKCAF6HT0HFW93LWC13NY0SDMVO: PUBLIC.STUDENT FOREIGN KEY(ADDRESS_ID) REFERENCES PUBLIC.ADDRESS(ID) (CAST(1 AS BIGINT))"; SQL statement:
+insert into student (address_id,name,id) values (?,?,default) [23506-224]
+2024-08-29T11:05:51.687+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.AddressService    : Adding address: com.example.demo.entity.Address@1ffbb306
+2024-08-29T11:05:51.727+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.AddressService    : Address added successfully: com.example.demo.entity.Address@1ffbb306
+2024-08-29T11:06:25.573+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-5] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@cb4e846
+2024-08-29T11:06:25.579+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-5] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@cb4e846
+2024-08-29T11:07:46.930+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-8] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@41b2e74d
+2024-08-29T11:07:46.933+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-8] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@41b2e74d
+2024-08-29T11:08:13.861+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-9] c.example.demo.service.AddressService    : Adding address: com.example.demo.entity.Address@6b5e7627
+2024-08-29T11:08:13.864+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-9] c.example.demo.service.AddressService    : Address added successfully: com.example.demo.entity.Address@6b5e7627
+2024-08-29T11:08:15.394+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-10] c.example.demo.service.AddressService    : Adding address: com.example.demo.entity.Address@3cdb45
+2024-08-29T11:08:15.397+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-10] c.example.demo.service.AddressService    : Address added successfully: com.example.demo.entity.Address@3cdb45
+2024-08-29T11:08:57.487+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-2] c.example.demo.service.TeacherService    : Enrolling teacher: com.example.demo.entity.Teacher@1ec0dd4b
+2024-08-29T11:08:57.490+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-2] c.example.demo.service.TeacherService    : Teacher enrolled successfully: com.example.demo.entity.Teacher@1ec0dd4b
+2024-08-29T11:09:02.271+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-1] c.example.demo.service.TeacherService    : Enrolling teacher: com.example.demo.entity.Teacher@da43b33
+2024-08-29T11:09:02.273+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-1] c.example.demo.service.TeacherService    : Teacher enrolled successfully: com.example.demo.entity.Teacher@da43b33
+2024-08-29T11:09:05.324+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-3] c.example.demo.service.TeacherService    : Enrolling teacher: com.example.demo.entity.Teacher@6868c8b6
+2024-08-29T11:09:05.327+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-3] c.example.demo.service.TeacherService    : Teacher enrolled successfully: com.example.demo.entity.Teacher@6868c8b6
+2024-08-29T11:13:01.212+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-4] c.e.demo.controller.StudentController    : Request to add teacher with ID: 3 to student with ID: 3
+2024-08-29T11:13:01.214+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.StudentService    : Adding teacher with ID: 3 to student with ID: 3
+2024-08-29T11:13:01.253+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.StudentService    : Teacher with ID: 3 added to student with ID: 3
+2024-08-29T11:13:01.257+05:30  INFO 10296 --- [demo-1] [http-nio-8080-exec-4] c.e.demo.controller.StudentController    : Teacher with ID: 3 added to student with ID: 3
+2024-08-29T11:16:36.796+05:30  INFO 10296 --- [demo-1] [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-29T11:16:36.830+05:30  INFO 10296 --- [demo-1] [RMI TCP Connection(16)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T11:16:36.832+05:30  INFO 10296 --- [demo-1] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T11:16:36.835+05:30  INFO 10296 --- [demo-1] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T11:17:00.393+05:30  INFO 29836 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 29836 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T11:17:00.400+05:30  INFO 29836 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T11:17:00.987+05:30  INFO 29836 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T11:17:01.057+05:30  INFO 29836 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
+2024-08-29T11:17:01.303+05:30  WARN 29836 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T11:17:01.338+05:30  INFO 29836 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T11:17:01.561+05:30  INFO 29836 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T11:17:01.571+05:30  INFO 29836 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T11:17:01.571+05:30  INFO 29836 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T11:17:01.621+05:30  INFO 29836 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T11:17:01.621+05:30  INFO 29836 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1170 ms
+2024-08-29T11:17:01.649+05:30  INFO 29836 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T11:17:01.790+05:30  INFO 29836 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T11:17:01.792+05:30  INFO 29836 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T11:17:01.800+05:30  INFO 29836 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T11:17:01.901+05:30  INFO 29836 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T11:17:01.940+05:30  INFO 29836 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T11:17:01.971+05:30  INFO 29836 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T11:17:02.200+05:30  INFO 29836 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T11:17:02.234+05:30  WARN 29836 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T11:17:02.934+05:30  INFO 29836 --- [demo-1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T11:17:02.994+05:30  INFO 29836 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T11:17:03.230+05:30  WARN 29836 --- [demo-1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T11:17:03.530+05:30  INFO 29836 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T11:17:03.541+05:30  INFO 29836 --- [demo-1] [main] com.example.demo.Demo1Application        : Started Demo1Application in 3.607 seconds (process running for 4.297)
+2024-08-29T11:17:53.298+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T11:17:53.299+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T11:17:53.302+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-29T11:17:53.438+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@3f7903d7
+2024-08-29T11:17:53.538+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@3f7903d7
+2024-08-29T11:18:36.183+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-3] c.example.demo.service.AddressService    : Adding address: com.example.demo.entity.Address@19005f5a
+2024-08-29T11:18:36.186+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-3] c.example.demo.service.AddressService    : Address added successfully: com.example.demo.entity.Address@19005f5a
+2024-08-29T11:19:56.772+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-9] c.example.demo.service.TeacherService    : Enrolling teacher: com.example.demo.entity.Teacher@439a3edf
+2024-08-29T11:19:56.776+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-9] c.example.demo.service.TeacherService    : Teacher enrolled successfully: com.example.demo.entity.Teacher@439a3edf
+2024-08-29T11:20:16.672+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-1] c.e.demo.controller.StudentController    : Request to add teacher with ID: 1 to student with ID: 1
+2024-08-29T11:20:16.674+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-1] c.example.demo.service.StudentService    : Adding teacher with ID: 1 to student with ID: 1
+2024-08-29T11:20:16.723+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-1] c.example.demo.service.StudentService    : Teacher with ID: 1 added to student with ID: 1
+2024-08-29T11:20:16.730+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-1] c.e.demo.controller.StudentController    : Teacher with ID: 1 added to student with ID: 1
+2024-08-29T11:21:17.102+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-7] c.example.demo.service.StudentService    : Updating student with ID: 1 with details: com.example.demo.entity.Student@57d0b87b
+2024-08-29T11:21:17.120+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-7] c.example.demo.service.StudentService    : Student updated successfully: com.example.demo.entity.Student@47fab1e0
+2024-08-29T11:22:08.154+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-6] c.example.demo.service.StudentService    : Updating student with ID: 1 with details: com.example.demo.entity.Student@674685a2
+2024-08-29T11:22:08.158+05:30  INFO 29836 --- [demo-1] [http-nio-8080-exec-6] c.example.demo.service.StudentService    : Student updated successfully: com.example.demo.entity.Student@1d33375f
+2024-08-29T11:22:24.599+05:30  INFO 29836 --- [demo-1] [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-29T11:22:24.625+05:30  INFO 29836 --- [demo-1] [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T11:22:24.627+05:30  INFO 29836 --- [demo-1] [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T11:22:24.629+05:30  INFO 29836 --- [demo-1] [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T11:22:51.664+05:30  INFO 21960 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 21960 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T11:22:51.672+05:30  INFO 21960 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T11:22:52.239+05:30  INFO 21960 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T11:22:52.309+05:30  INFO 21960 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
+2024-08-29T11:22:52.552+05:30  WARN 21960 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T11:22:52.592+05:30  INFO 21960 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T11:22:52.791+05:30  INFO 21960 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T11:22:52.802+05:30  INFO 21960 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T11:22:52.802+05:30  INFO 21960 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T11:22:52.847+05:30  INFO 21960 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T11:22:52.847+05:30  INFO 21960 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1124 ms
+2024-08-29T11:22:52.872+05:30  INFO 21960 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T11:22:53.003+05:30  INFO 21960 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T11:22:53.005+05:30  INFO 21960 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T11:22:53.016+05:30  INFO 21960 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T11:22:53.119+05:30  INFO 21960 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T11:22:53.158+05:30  INFO 21960 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T11:22:53.195+05:30  INFO 21960 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T11:22:53.471+05:30  INFO 21960 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T11:22:53.509+05:30  WARN 21960 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T11:22:54.210+05:30  INFO 21960 --- [demo-1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T11:22:54.271+05:30  INFO 21960 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T11:22:54.517+05:30  WARN 21960 --- [demo-1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T11:22:54.862+05:30  INFO 21960 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T11:22:54.869+05:30  INFO 21960 --- [demo-1] [main] com.example.demo.Demo1Application        : Started Demo1Application in 3.612 seconds (process running for 4.246)
+2024-08-29T11:23:01.782+05:30  INFO 21960 --- [demo-1] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T11:23:01.783+05:30  INFO 21960 --- [demo-1] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T11:23:01.783+05:30  INFO 21960 --- [demo-1] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-08-29T11:23:01.901+05:30  INFO 21960 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@7b798f8a
+2024-08-29T11:23:01.977+05:30  INFO 21960 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@7b798f8a
+2024-08-29T11:32:57.945+05:30  INFO 21960 --- [demo-1] [http-nio-8080-exec-3] c.e.demo.controller.StudentController    : Request to add teacher with ID: 4 to student with ID: 4
+2024-08-29T11:32:57.947+05:30  INFO 21960 --- [demo-1] [http-nio-8080-exec-3] c.example.demo.service.StudentService    : Adding teacher with ID: 4 to student with ID: 4
+2024-08-29T11:33:34.072+05:30  INFO 21960 --- [demo-1] [http-nio-8080-exec-6] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@4904bfab
+2024-08-29T11:33:34.075+05:30  INFO 21960 --- [demo-1] [http-nio-8080-exec-6] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@4904bfab
+2024-08-29T11:35:31.595+05:30  INFO 21960 --- [demo-1] [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-29T11:35:31.622+05:30  INFO 21960 --- [demo-1] [RMI TCP Connection(16)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T11:35:31.625+05:30  INFO 21960 --- [demo-1] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T11:35:31.627+05:30  INFO 21960 --- [demo-1] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T11:35:39.646+05:30  INFO 11908 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 11908 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T11:35:39.650+05:30  INFO 11908 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T11:35:40.208+05:30  INFO 11908 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T11:35:40.267+05:30  INFO 11908 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
+2024-08-29T11:35:40.484+05:30  WARN 11908 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T11:35:40.523+05:30  INFO 11908 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T11:35:40.760+05:30  INFO 11908 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T11:35:40.773+05:30  INFO 11908 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T11:35:40.774+05:30  INFO 11908 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T11:35:40.829+05:30  INFO 11908 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T11:35:40.830+05:30  INFO 11908 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1125 ms
+2024-08-29T11:35:40.855+05:30  INFO 11908 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T11:35:40.986+05:30  INFO 11908 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T11:35:40.987+05:30  INFO 11908 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T11:35:40.996+05:30  INFO 11908 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T11:35:41.094+05:30  INFO 11908 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T11:35:41.140+05:30  INFO 11908 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T11:35:41.166+05:30  INFO 11908 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T11:35:41.374+05:30  INFO 11908 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T11:35:41.404+05:30  WARN 11908 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T11:35:42.078+05:30  INFO 11908 --- [demo-1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T11:35:42.138+05:30  INFO 11908 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T11:35:42.380+05:30  WARN 11908 --- [demo-1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T11:35:42.725+05:30  INFO 11908 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T11:35:42.733+05:30  INFO 11908 --- [demo-1] [main] com.example.demo.Demo1Application        : Started Demo1Application in 3.587 seconds (process running for 4.252)
+2024-08-29T11:35:48.987+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T11:35:48.988+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T11:35:48.989+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T11:35:49.102+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-1] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@439a3c32
+2024-08-29T11:35:49.176+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-1] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@439a3c32
+2024-08-29T11:36:45.162+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-5] c.example.demo.service.TeacherService    : Enrolling teacher: com.example.demo.entity.Teacher@186b113
+2024-08-29T11:36:45.164+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-5] c.example.demo.service.TeacherService    : Teacher enrolled successfully: com.example.demo.entity.Teacher@186b113
+2024-08-29T11:36:51.168+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-7] c.example.demo.service.TeacherService    : Enrolling teacher: com.example.demo.entity.Teacher@39e94248
+2024-08-29T11:36:51.171+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-7] c.example.demo.service.TeacherService    : Teacher enrolled successfully: com.example.demo.entity.Teacher@39e94248
+2024-08-29T11:36:58.743+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-9] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@15f529a2
+2024-08-29T11:36:58.745+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-9] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@15f529a2
+2024-08-29T11:37:12.378+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-10] c.e.demo.controller.StudentController    : Request to add teacher with ID: 1 to student with ID: 1
+2024-08-29T11:37:12.379+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-10] c.example.demo.service.StudentService    : Adding teacher with ID: 1 to student with ID: 1
+2024-08-29T11:37:12.387+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-10] c.example.demo.service.StudentService    : Teacher with ID: 1 added to student with ID: 1
+2024-08-29T11:37:12.392+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-10] c.e.demo.controller.StudentController    : Teacher with ID: 1 added to student with ID: 1
+2024-08-29T12:38:21.772+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-6] c.example.demo.service.AddressService    : Adding address: com.example.demo.entity.Address@1f16de
+2024-08-29T12:38:21.779+05:30  INFO 11908 --- [demo-1] [http-nio-8080-exec-6] c.example.demo.service.AddressService    : Address added successfully: com.example.demo.entity.Address@1f16de
+2024-08-29T12:38:58.937+05:30  INFO 11908 --- [demo-1] [RMI TCP Connection(68)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-29T12:38:58.985+05:30  INFO 11908 --- [demo-1] [RMI TCP Connection(68)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T12:38:58.991+05:30  INFO 11908 --- [demo-1] [RMI TCP Connection(68)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T12:38:58.995+05:30  INFO 11908 --- [demo-1] [RMI TCP Connection(68)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T12:39:09.070+05:30  INFO 10580 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 10580 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T12:39:09.074+05:30  INFO 10580 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T12:39:09.896+05:30  INFO 10580 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T12:39:09.973+05:30  INFO 10580 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 3 JPA repository interfaces.
+2024-08-29T12:39:10.300+05:30  WARN 10580 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T12:39:10.352+05:30  INFO 10580 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T12:39:10.645+05:30  INFO 10580 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T12:39:10.658+05:30  INFO 10580 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T12:39:10.659+05:30  INFO 10580 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T12:39:10.732+05:30  INFO 10580 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T12:39:10.732+05:30  INFO 10580 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1604 ms
+2024-08-29T12:39:10.771+05:30  INFO 10580 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T12:39:11.009+05:30  INFO 10580 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T12:39:11.010+05:30  INFO 10580 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T12:39:11.021+05:30  INFO 10580 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T12:39:11.165+05:30  INFO 10580 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T12:39:11.233+05:30  INFO 10580 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T12:39:11.267+05:30  INFO 10580 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T12:39:11.592+05:30  INFO 10580 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T12:39:11.636+05:30  WARN 10580 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T12:39:12.983+05:30  INFO 10580 --- [demo-1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T12:39:13.114+05:30  INFO 10580 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T12:39:13.521+05:30  WARN 10580 --- [demo-1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T12:39:14.039+05:30  INFO 10580 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T12:39:14.053+05:30  INFO 10580 --- [demo-1] [main] com.example.demo.Demo1Application        : Started Demo1Application in 5.492 seconds (process running for 6.267)
+2024-08-29T12:39:33.046+05:30  INFO 10580 --- [demo-1] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T12:39:33.046+05:30  INFO 10580 --- [demo-1] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T12:39:33.049+05:30  INFO 10580 --- [demo-1] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-29T12:39:33.233+05:30  INFO 10580 --- [demo-1] [http-nio-8080-exec-1] c.example.demo.service.AddressService    : Adding address: com.example.demo.entity.Address@5944ee2b
+2024-08-29T12:39:33.370+05:30  INFO 10580 --- [demo-1] [http-nio-8080-exec-1] c.example.demo.service.AddressService    : Address added successfully: com.example.demo.entity.Address@5944ee2b
+2024-08-29T12:42:44.038+05:30  INFO 10580 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@4fc63f09
+2024-08-29T12:42:44.047+05:30  INFO 10580 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@4fc63f09
+2024-08-29T12:49:42.217+05:30  INFO 10580 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.TeacherService    : Enrolling teacher: com.example.demo.entity.Teacher@31d41aa9
+2024-08-29T12:49:42.220+05:30  INFO 10580 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.TeacherService    : Teacher enrolled successfully: com.example.demo.entity.Teacher@31d41aa9
+2024-08-29T12:49:55.952+05:30  INFO 10580 --- [demo-1] [http-nio-8080-exec-6] c.e.demo.controller.StudentController    : Request to add teacher with ID: 1 to student with ID: 1
+2024-08-29T12:49:55.954+05:30  INFO 10580 --- [demo-1] [http-nio-8080-exec-6] c.example.demo.service.StudentService    : Adding teacher with ID: 1 to student with ID: 1
+2024-08-29T12:49:56.033+05:30  INFO 10580 --- [demo-1] [http-nio-8080-exec-6] c.example.demo.service.StudentService    : Teacher with ID: 1 added to student with ID: 1
+2024-08-29T12:49:56.040+05:30  INFO 10580 --- [demo-1] [http-nio-8080-exec-6] c.e.demo.controller.StudentController    : Teacher with ID: 1 added to student with ID: 1
+2024-08-29T12:55:28.339+05:30  INFO 10580 --- [demo-1] [RMI TCP Connection(21)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-29T12:55:28.360+05:30  INFO 10580 --- [demo-1] [RMI TCP Connection(21)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T12:55:28.362+05:30  INFO 10580 --- [demo-1] [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T12:55:28.363+05:30  INFO 10580 --- [demo-1] [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T12:55:35.983+05:30  INFO 14400 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 14400 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T12:55:35.985+05:30  INFO 14400 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T12:55:36.736+05:30  INFO 14400 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T12:55:36.830+05:30  INFO 14400 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 3 JPA repository interfaces.
+2024-08-29T12:55:37.315+05:30  WARN 14400 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T12:55:37.391+05:30  INFO 14400 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T12:55:37.821+05:30  INFO 14400 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T12:55:37.843+05:30  INFO 14400 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T12:55:37.844+05:30  INFO 14400 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T12:55:37.945+05:30  INFO 14400 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T12:55:37.947+05:30  INFO 14400 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1914 ms
+2024-08-29T12:55:38.001+05:30  INFO 14400 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T12:55:38.324+05:30  INFO 14400 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T12:55:38.327+05:30  INFO 14400 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T12:55:38.349+05:30  INFO 14400 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T12:55:38.538+05:30  INFO 14400 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T12:55:38.614+05:30  INFO 14400 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T12:55:38.657+05:30  INFO 14400 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T12:55:39.019+05:30  INFO 14400 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T12:55:39.070+05:30  WARN 14400 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T12:55:39.340+05:30 ERROR 14400 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+2024-08-29T12:55:39.341+05:30  WARN 14400 --- [demo-1] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+2024-08-29T12:55:39.341+05:30  INFO 14400 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T12:55:39.344+05:30  INFO 14400 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T12:55:39.347+05:30  INFO 14400 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-29T12:55:39.364+05:30  INFO 14400 --- [demo-1] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-29T12:55:39.385+05:30 ERROR 14400 --- [demo-1] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.example.demo.Demo1Application.main(Demo1Application.java:10) ~[classes/:na]
+Caused by: org.hibernate.AnnotationException: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1639) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1653) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1614) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1605) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1811) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1770) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:334) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 15 common frames omitted
+
+2024-08-29T12:56:59.228+05:30  INFO 15764 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 15764 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T12:56:59.232+05:30  INFO 15764 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T12:57:00.311+05:30  INFO 15764 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T12:57:00.399+05:30  INFO 15764 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 3 JPA repository interfaces.
+2024-08-29T12:57:00.745+05:30  WARN 15764 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T12:57:00.802+05:30  INFO 15764 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T12:57:01.142+05:30  INFO 15764 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T12:57:01.158+05:30  INFO 15764 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T12:57:01.159+05:30  INFO 15764 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T12:57:01.232+05:30  INFO 15764 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T12:57:01.233+05:30  INFO 15764 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1950 ms
+2024-08-29T12:57:01.273+05:30  INFO 15764 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T12:57:01.509+05:30  INFO 15764 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T12:57:01.511+05:30  INFO 15764 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T12:57:01.523+05:30  INFO 15764 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T12:57:01.685+05:30  INFO 15764 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T12:57:01.750+05:30  INFO 15764 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T12:57:01.794+05:30  INFO 15764 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T12:57:02.191+05:30  INFO 15764 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T12:57:02.248+05:30  WARN 15764 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T12:57:02.465+05:30 ERROR 15764 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+2024-08-29T12:57:02.466+05:30  WARN 15764 --- [demo-1] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+2024-08-29T12:57:02.466+05:30  INFO 15764 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T12:57:02.469+05:30  INFO 15764 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T12:57:02.472+05:30  INFO 15764 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-29T12:57:02.485+05:30  INFO 15764 --- [demo-1] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-29T12:57:02.503+05:30 ERROR 15764 --- [demo-1] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.example.demo.Demo1Application.main(Demo1Application.java:10) ~[classes/:na]
+Caused by: org.hibernate.AnnotationException: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1639) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1653) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1614) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1605) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1811) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1770) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:334) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 15 common frames omitted
+
+2024-08-29T12:58:27.008+05:30  INFO 12532 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 12532 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T12:58:27.015+05:30  INFO 12532 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T12:58:28.345+05:30  INFO 12532 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T12:58:28.469+05:30  INFO 12532 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 3 JPA repository interfaces.
+2024-08-29T12:58:28.861+05:30  WARN 12532 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T12:58:28.925+05:30  INFO 12532 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T12:58:29.245+05:30  INFO 12532 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T12:58:29.264+05:30  INFO 12532 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T12:58:29.265+05:30  INFO 12532 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T12:58:29.359+05:30  INFO 12532 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T12:58:29.360+05:30  INFO 12532 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2241 ms
+2024-08-29T12:58:29.419+05:30  INFO 12532 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T12:58:29.722+05:30  INFO 12532 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T12:58:29.725+05:30  INFO 12532 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T12:58:29.741+05:30  INFO 12532 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T12:58:29.932+05:30  INFO 12532 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T12:58:30.005+05:30  INFO 12532 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T12:58:30.060+05:30  INFO 12532 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T12:58:30.492+05:30  INFO 12532 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T12:58:30.551+05:30  WARN 12532 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T12:58:30.821+05:30 ERROR 12532 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+2024-08-29T12:58:30.822+05:30  WARN 12532 --- [demo-1] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+2024-08-29T12:58:30.823+05:30  INFO 12532 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T12:58:30.826+05:30  INFO 12532 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T12:58:30.829+05:30  INFO 12532 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-29T12:58:30.845+05:30  INFO 12532 --- [demo-1] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-29T12:58:30.866+05:30 ERROR 12532 --- [demo-1] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.example.demo.Demo1Application.main(Demo1Application.java:10) ~[classes/:na]
+Caused by: org.hibernate.AnnotationException: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1639) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1653) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1614) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1605) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1811) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1770) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:334) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 15 common frames omitted
+
+2024-08-29T13:00:44.203+05:30  INFO 19520 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 19520 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T13:00:44.208+05:30  INFO 19520 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T13:00:45.015+05:30  INFO 19520 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T13:00:45.090+05:30  INFO 19520 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+2024-08-29T13:00:45.409+05:30  WARN 19520 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T13:00:45.459+05:30  INFO 19520 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T13:00:45.740+05:30  INFO 19520 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T13:00:45.759+05:30  INFO 19520 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T13:00:45.759+05:30  INFO 19520 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T13:00:45.819+05:30  INFO 19520 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T13:00:45.820+05:30  INFO 19520 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1557 ms
+2024-08-29T13:00:45.855+05:30  INFO 19520 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T13:00:46.082+05:30  INFO 19520 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T13:00:46.084+05:30  INFO 19520 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T13:00:46.103+05:30  INFO 19520 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T13:00:46.253+05:30  INFO 19520 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T13:00:46.320+05:30  INFO 19520 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T13:00:46.356+05:30  INFO 19520 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T13:00:46.743+05:30  INFO 19520 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T13:00:46.798+05:30  WARN 19520 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T13:00:47.034+05:30 ERROR 19520 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+2024-08-29T13:00:47.035+05:30  WARN 19520 --- [demo-1] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+2024-08-29T13:00:47.035+05:30  INFO 19520 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T13:00:47.037+05:30  INFO 19520 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T13:00:47.041+05:30  INFO 19520 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-29T13:00:47.055+05:30  INFO 19520 --- [demo-1] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-29T13:00:47.076+05:30 ERROR 19520 --- [demo-1] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.example.demo.Demo1Application.main(Demo1Application.java:10) ~[classes/:na]
+Caused by: org.hibernate.AnnotationException: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1639) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1653) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1614) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1605) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1811) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1770) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:334) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 15 common frames omitted
+
+2024-08-29T13:03:45.130+05:30  INFO 16044 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 16044 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T13:03:45.133+05:30  INFO 16044 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T13:03:46.064+05:30  INFO 16044 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T13:03:46.166+05:30  INFO 16044 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 3 JPA repository interfaces.
+2024-08-29T13:03:46.645+05:30  WARN 16044 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T13:03:46.723+05:30  INFO 16044 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T13:03:47.132+05:30  INFO 16044 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T13:03:47.151+05:30  INFO 16044 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T13:03:47.151+05:30  INFO 16044 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T13:03:47.244+05:30  INFO 16044 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T13:03:47.245+05:30  INFO 16044 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2052 ms
+2024-08-29T13:03:47.290+05:30  INFO 16044 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T13:03:47.529+05:30  INFO 16044 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T13:03:47.531+05:30  INFO 16044 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T13:03:47.545+05:30  INFO 16044 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T13:03:47.714+05:30  INFO 16044 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T13:03:47.792+05:30  INFO 16044 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T13:03:47.837+05:30  INFO 16044 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T13:03:48.207+05:30  INFO 16044 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T13:03:48.266+05:30  WARN 16044 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T13:03:48.486+05:30 ERROR 16044 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+2024-08-29T13:03:48.486+05:30  WARN 16044 --- [demo-1] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+2024-08-29T13:03:48.487+05:30  INFO 16044 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T13:03:48.489+05:30  INFO 16044 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T13:03:48.492+05:30  INFO 16044 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-29T13:03:48.506+05:30  INFO 16044 --- [demo-1] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-29T13:03:48.527+05:30 ERROR 16044 --- [demo-1] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.example.demo.Demo1Application.main(Demo1Application.java:10) ~[classes/:na]
+Caused by: org.hibernate.AnnotationException: Collection 'com.example.demo.entity.Address.students' is 'mappedBy' a property named 'address' which does not exist in the target entity 'com.example.demo.entity.Student'
+	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1639) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1653) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1614) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1605) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1811) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1770) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:334) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 15 common frames omitted
+
+2024-08-29T13:04:57.696+05:30  INFO 21736 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 21736 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T13:04:57.699+05:30  INFO 21736 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T13:04:58.512+05:30  INFO 21736 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T13:04:58.587+05:30  INFO 21736 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 3 JPA repository interfaces.
+2024-08-29T13:04:58.909+05:30  WARN 21736 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T13:04:58.960+05:30  INFO 21736 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T13:04:59.274+05:30  INFO 21736 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T13:04:59.295+05:30  INFO 21736 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T13:04:59.296+05:30  INFO 21736 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T13:04:59.373+05:30  INFO 21736 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T13:04:59.373+05:30  INFO 21736 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1619 ms
+2024-08-29T13:04:59.418+05:30  INFO 21736 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T13:04:59.646+05:30  INFO 21736 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T13:04:59.648+05:30  INFO 21736 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T13:04:59.659+05:30  INFO 21736 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T13:04:59.818+05:30  INFO 21736 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T13:04:59.888+05:30  INFO 21736 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T13:04:59.929+05:30  INFO 21736 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T13:05:00.356+05:30  INFO 21736 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T13:05:00.430+05:30  WARN 21736 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T13:05:01.788+05:30  INFO 21736 --- [demo-1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T13:05:01.884+05:30  INFO 21736 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T13:05:02.206+05:30  WARN 21736 --- [demo-1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T13:05:02.636+05:30  INFO 21736 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T13:05:02.651+05:30  INFO 21736 --- [demo-1] [main] com.example.demo.Demo1Application        : Started Demo1Application in 5.538 seconds (process running for 6.303)
+2024-08-29T13:05:16.795+05:30  INFO 21736 --- [demo-1] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T13:05:16.796+05:30  INFO 21736 --- [demo-1] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T13:05:16.796+05:30  INFO 21736 --- [demo-1] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-08-29T13:05:16.898+05:30  INFO 21736 --- [demo-1] [http-nio-8080-exec-2] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@7bce5791
+2024-08-29T13:05:16.936+05:30  WARN 21736 --- [demo-1] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23506, SQLState: 23506
+2024-08-29T13:05:16.936+05:30 ERROR 21736 --- [demo-1] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Referential integrity constraint violation: "FKCAF6HT0HFW93LWC13NY0SDMVO: PUBLIC.STUDENT FOREIGN KEY(ADDRESS_ID) REFERENCES PUBLIC.ADDRESS(ID) (CAST(1 AS BIGINT))"; SQL statement:
+insert into student (address_id,name,id) values (?,?,default) [23506-224]
+2024-08-29T13:05:37.171+05:30  INFO 21736 --- [demo-1] [http-nio-8080-exec-3] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@186b113
+2024-08-29T13:05:37.203+05:30  INFO 21736 --- [demo-1] [http-nio-8080-exec-3] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@186b113
+2024-08-29T13:07:27.315+05:30  INFO 21736 --- [demo-1] [http-nio-8080-exec-7] c.example.demo.service.AddressService    : Adding address: com.example.demo.entity.Address@15f529a2
+2024-08-29T13:07:27.319+05:30  INFO 21736 --- [demo-1] [http-nio-8080-exec-7] c.example.demo.service.AddressService    : Address added successfully: com.example.demo.entity.Address@15f529a2
+2024-08-29T13:07:31.708+05:30  INFO 21736 --- [demo-1] [http-nio-8080-exec-8] c.example.demo.service.AddressService    : Adding address: com.example.demo.entity.Address@1c66d707
+2024-08-29T13:07:31.710+05:30  INFO 21736 --- [demo-1] [http-nio-8080-exec-8] c.example.demo.service.AddressService    : Address added successfully: com.example.demo.entity.Address@1c66d707
+2024-08-29T13:08:02.880+05:30  INFO 21736 --- [demo-1] [http-nio-8080-exec-10] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@79dd1963
+2024-08-29T13:08:02.884+05:30  INFO 21736 --- [demo-1] [http-nio-8080-exec-10] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@79dd1963
+2024-08-29T13:09:58.019+05:30  INFO 21736 --- [demo-1] [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-29T13:09:58.047+05:30  INFO 21736 --- [demo-1] [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T13:09:58.050+05:30  INFO 21736 --- [demo-1] [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T13:09:58.053+05:30  INFO 21736 --- [demo-1] [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T13:10:34.580+05:30  INFO 26712 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 26712 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T13:10:34.586+05:30  INFO 26712 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T13:10:35.466+05:30  INFO 26712 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T13:10:35.559+05:30  INFO 26712 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 3 JPA repository interfaces.
+2024-08-29T13:10:35.926+05:30  WARN 26712 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T13:10:35.982+05:30  INFO 26712 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T13:10:36.295+05:30  INFO 26712 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T13:10:36.310+05:30  INFO 26712 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T13:10:36.310+05:30  INFO 26712 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T13:10:36.385+05:30  INFO 26712 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T13:10:36.387+05:30  INFO 26712 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1735 ms
+2024-08-29T13:10:36.426+05:30  INFO 26712 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T13:10:36.669+05:30  INFO 26712 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T13:10:36.671+05:30  INFO 26712 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T13:10:36.686+05:30  INFO 26712 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T13:10:36.838+05:30  INFO 26712 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T13:10:36.903+05:30  INFO 26712 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T13:10:36.951+05:30  INFO 26712 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T13:10:37.315+05:30  INFO 26712 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T13:10:37.367+05:30  WARN 26712 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T13:10:37.587+05:30 ERROR 26712 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Association 'com.example.demo.entity.Student.students' is 'mappedBy' a property named 'address' which references the wrong entity type 'com.example.demo.entity.Address', expected 'com.example.demo.entity.Student'
+2024-08-29T13:10:37.587+05:30  WARN 26712 --- [demo-1] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Association 'com.example.demo.entity.Student.students' is 'mappedBy' a property named 'address' which references the wrong entity type 'com.example.demo.entity.Address', expected 'com.example.demo.entity.Student'
+2024-08-29T13:10:37.587+05:30  INFO 26712 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T13:10:37.590+05:30  INFO 26712 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T13:10:37.593+05:30  INFO 26712 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-29T13:10:37.607+05:30  INFO 26712 --- [demo-1] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-29T13:10:37.626+05:30 ERROR 26712 --- [demo-1] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Association 'com.example.demo.entity.Student.students' is 'mappedBy' a property named 'address' which references the wrong entity type 'com.example.demo.entity.Address', expected 'com.example.demo.entity.Student'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.example.demo.Demo1Application.main(Demo1Application.java:10) ~[classes/:na]
+Caused by: org.hibernate.AnnotationException: Association 'com.example.demo.entity.Student.students' is 'mappedBy' a property named 'address' which references the wrong entity type 'com.example.demo.entity.Address', expected 'com.example.demo.entity.Student'
+	at org.hibernate.boot.model.internal.BinderHelper.checkMappedByType(BinderHelper.java:1164) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1642) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1653) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1614) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1605) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1811) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1770) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:334) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 15 common frames omitted
+
+2024-08-29T13:11:58.611+05:30  INFO 14436 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 14436 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T13:11:58.614+05:30  INFO 14436 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T13:11:59.336+05:30  INFO 14436 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T13:11:59.413+05:30  INFO 14436 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 3 JPA repository interfaces.
+2024-08-29T13:11:59.697+05:30  WARN 14436 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T13:11:59.757+05:30  INFO 14436 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T13:12:00.086+05:30  INFO 14436 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T13:12:00.106+05:30  INFO 14436 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T13:12:00.106+05:30  INFO 14436 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T13:12:00.180+05:30  INFO 14436 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T13:12:00.180+05:30  INFO 14436 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1516 ms
+2024-08-29T13:12:00.220+05:30  INFO 14436 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T13:12:00.437+05:30  INFO 14436 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T13:12:00.439+05:30  INFO 14436 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T13:12:00.453+05:30  INFO 14436 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T13:12:00.606+05:30  INFO 14436 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T13:12:00.668+05:30  INFO 14436 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T13:12:00.708+05:30  INFO 14436 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T13:12:01.061+05:30  INFO 14436 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T13:12:01.109+05:30  WARN 14436 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T13:12:02.120+05:30  INFO 14436 --- [demo-1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T13:12:02.204+05:30  INFO 14436 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T13:12:02.504+05:30  WARN 14436 --- [demo-1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T13:12:02.918+05:30  INFO 14436 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T13:12:02.929+05:30  INFO 14436 --- [demo-1] [main] com.example.demo.Demo1Application        : Started Demo1Application in 4.79 seconds (process running for 5.523)
+2024-08-29T13:26:20.024+05:30  INFO 14436 --- [demo-1] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T13:26:20.025+05:30  INFO 14436 --- [demo-1] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T13:26:20.026+05:30  INFO 14436 --- [demo-1] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T13:26:20.122+05:30  INFO 14436 --- [demo-1] [http-nio-8080-exec-3] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@86cb929
+2024-08-29T13:26:20.161+05:30  WARN 14436 --- [demo-1] [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23506, SQLState: 23506
+2024-08-29T13:26:20.162+05:30 ERROR 14436 --- [demo-1] [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Referential integrity constraint violation: "FKCAF6HT0HFW93LWC13NY0SDMVO: PUBLIC.STUDENT FOREIGN KEY(ADDRESS_ID) REFERENCES PUBLIC.ADDRESS(ID) (CAST(2 AS BIGINT))"; SQL statement:
+insert into student (address_id,name,id) values (?,?,default) [23506-224]
+2024-08-29T13:26:29.866+05:30  INFO 14436 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@6b5e7627
+2024-08-29T13:26:29.897+05:30  INFO 14436 --- [demo-1] [http-nio-8080-exec-4] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@6b5e7627
+2024-08-29T13:28:15.570+05:30  INFO 14436 --- [demo-1] [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-29T13:28:15.589+05:30  INFO 14436 --- [demo-1] [RMI TCP Connection(18)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T13:28:15.590+05:30  INFO 14436 --- [demo-1] [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T13:28:15.593+05:30  INFO 14436 --- [demo-1] [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T13:28:30.311+05:30  INFO 30552 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 30552 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T13:28:30.314+05:30  INFO 30552 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T13:28:30.764+05:30  INFO 30552 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T13:28:30.811+05:30  INFO 30552 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2024-08-29T13:28:31.001+05:30  WARN 30552 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T13:28:31.034+05:30  INFO 30552 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T13:28:31.222+05:30  INFO 30552 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T13:28:31.230+05:30  INFO 30552 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T13:28:31.230+05:30  INFO 30552 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T13:28:31.272+05:30  INFO 30552 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T13:28:31.272+05:30  INFO 30552 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 923 ms
+2024-08-29T13:28:31.301+05:30  INFO 30552 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T13:28:31.433+05:30  INFO 30552 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T13:28:31.434+05:30  INFO 30552 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T13:28:31.442+05:30  INFO 30552 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T13:28:31.543+05:30  INFO 30552 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T13:28:31.585+05:30  INFO 30552 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T13:28:31.608+05:30  INFO 30552 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T13:28:31.803+05:30  INFO 30552 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T13:28:31.833+05:30  WARN 30552 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T13:28:31.948+05:30 ERROR 30552 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Property 'com.example.demo.entity.Student.address' is not a collection and may not be a '@OneToMany', '@ManyToMany', or '@ElementCollection'
+2024-08-29T13:28:31.948+05:30  WARN 30552 --- [demo-1] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.example.demo.entity.Student.address' is not a collection and may not be a '@OneToMany', '@ManyToMany', or '@ElementCollection'
+2024-08-29T13:28:31.949+05:30  INFO 30552 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T13:28:31.951+05:30  INFO 30552 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T13:28:31.952+05:30  INFO 30552 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-29T13:28:31.961+05:30  INFO 30552 --- [demo-1] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-29T13:28:31.973+05:30 ERROR 30552 --- [demo-1] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.example.demo.entity.Student.address' is not a collection and may not be a '@OneToMany', '@ManyToMany', or '@ElementCollection'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.example.demo.Demo1Application.main(Demo1Application.java:10) ~[classes/:na]
+Caused by: org.hibernate.AnnotationException: Property 'com.example.demo.entity.Student.address' is not a collection and may not be a '@OneToMany', '@ManyToMany', or '@ElementCollection'
+	at org.hibernate.boot.model.internal.CollectionBinder.determineSemanticJavaType(CollectionBinder.java:1123) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.determineCollectionClassification(CollectionBinder.java:1015) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.createBinderAutomatically(CollectionBinder.java:857) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.getCollectionBinder(CollectionBinder.java:850) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.bindCollection(CollectionBinder.java:286) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.PropertyBinder.bindProperty(PropertyBinder.java:887) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.PropertyBinder.buildProperty(PropertyBinder.java:801) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.PropertyBinder.processElementAnnotations(PropertyBinder.java:722) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.processIdPropertiesIfNotAlready(EntityBinder.java:1083) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:416) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:248) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:399) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:259) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 15 common frames omitted
+
+2024-08-29T13:33:32.243+05:30  INFO 28448 --- [demo-1] [main] com.example.demo.Demo1Application        : Starting Demo1Application using Java 17.0.5 with PID 28448 (C:\Assignment\demo-1\target\classes started by admin in C:\Assignment\demo-1)
+2024-08-29T13:33:32.246+05:30  INFO 28448 --- [demo-1] [main] com.example.demo.Demo1Application        : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T13:33:32.773+05:30  INFO 28448 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T13:33:32.820+05:30  INFO 28448 --- [demo-1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2024-08-29T13:33:33.008+05:30  WARN 28448 --- [demo-1] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-08-29T13:33:33.041+05:30  INFO 28448 --- [demo-1] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-08-29T13:33:33.215+05:30  INFO 28448 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T13:33:33.225+05:30  INFO 28448 --- [demo-1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T13:33:33.226+05:30  INFO 28448 --- [demo-1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T13:33:33.269+05:30  INFO 28448 --- [demo-1] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T13:33:33.269+05:30  INFO 28448 --- [demo-1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 984 ms
+2024-08-29T13:33:33.293+05:30  INFO 28448 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T13:33:33.422+05:30  INFO 28448 --- [demo-1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T13:33:33.423+05:30  INFO 28448 --- [demo-1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T13:33:33.431+05:30  INFO 28448 --- [demo-1] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T13:33:33.531+05:30  INFO 28448 --- [demo-1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T13:33:33.574+05:30  INFO 28448 --- [demo-1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T13:33:33.599+05:30  INFO 28448 --- [demo-1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T13:33:33.815+05:30  INFO 28448 --- [demo-1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T13:33:33.848+05:30  WARN 28448 --- [demo-1] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-29T13:33:34.470+05:30  INFO 28448 --- [demo-1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T13:33:34.527+05:30  INFO 28448 --- [demo-1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T13:33:34.714+05:30  WARN 28448 --- [demo-1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T13:33:34.999+05:30  INFO 28448 --- [demo-1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T13:33:35.007+05:30  INFO 28448 --- [demo-1] [main] com.example.demo.Demo1Application        : Started Demo1Application in 3.083 seconds (process running for 3.544)
+2024-08-29T13:33:43.846+05:30  INFO 28448 --- [demo-1] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T13:33:43.846+05:30  INFO 28448 --- [demo-1] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T13:33:43.847+05:30  INFO 28448 --- [demo-1] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T13:33:43.947+05:30  INFO 28448 --- [demo-1] [http-nio-8080-exec-2] c.example.demo.service.StudentService    : Enrolling student: com.example.demo.entity.Student@7da7e01d
+2024-08-29T13:33:44.004+05:30  INFO 28448 --- [demo-1] [http-nio-8080-exec-2] c.example.demo.service.StudentService    : Student enrolled successfully: com.example.demo.entity.Student@7da7e01d
+2024-08-29T13:36:04.724+05:30  INFO 28448 --- [demo-1] [http-nio-8080-exec-7] c.example.demo.service.AddressService    : Adding address: com.example.demo.entity.Address@53c1a3d6
+2024-08-29T13:36:04.727+05:30  INFO 28448 --- [demo-1] [http-nio-8080-exec-7] c.example.demo.service.AddressService    : Address added successfully: com.example.demo.entity.Address@53c1a3d6
+2024-08-29T13:37:59.276+05:30  INFO 28448 --- [demo-1] [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-08-29T13:37:59.296+05:30  INFO 28448 --- [demo-1] [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T13:37:59.298+05:30  INFO 28448 --- [demo-1] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T13:37:59.301+05:30  INFO 28448 --- [demo-1] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

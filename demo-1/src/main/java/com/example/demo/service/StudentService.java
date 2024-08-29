@@ -63,4 +63,8 @@ public class StudentService {
         studentRepository.save(student);
         logger.info("Teacher with ID: {} removed from student with ID: {}", teacherId, studentId);
     }
+    
+    public Student getStudent(Long id) {
+        return studentRepository.findById(id).orElseThrow(() -> new RuntimeException("Student not found"));
+    }
 }

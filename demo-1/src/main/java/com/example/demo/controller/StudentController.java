@@ -53,6 +53,11 @@ public class StudentController {
         studentService.removeTeacherFromStudent(studentId, teacherId);
         logger.info("Teacher with ID: {} removed from student with ID: {}", teacherId, studentId);
     }
+    
+    @GetMapping("/{id}")
+    public Student getStudent(@PathVariable Long id) {
+        return studentService.getStudent(id);
+    }
 }
 
 

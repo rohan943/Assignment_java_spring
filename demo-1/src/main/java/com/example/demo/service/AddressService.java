@@ -22,10 +22,13 @@ public class AddressService {
         return savedAddress;
     }
 
-    public void deleteAddress(Long id) {
-        logger.info("Deleting address with ID: {}", id);
-        addressRepository.deleteById(id);
-        logger.info("Address deleted successfully with ID: {}", id);
+    public boolean deleteAddress(Long id) {
+        if (addressRepository.existsById(id)) {
+            addressRepository.deleteById(id);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public Address updateAddress(Long id, Address addressDetails) {

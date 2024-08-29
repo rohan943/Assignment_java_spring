@@ -1,5 +1,5 @@
 package com.example.demo.entity;
-import jakarta.persistence.*;
+
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,26 +9,30 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.JoinColumn;
-import java.util.HashSet;
+
 import java.util.Set;
+
+
 
 @Entity
 public class Student {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    
     private String name;
-
+    
     @ManyToMany
-    @JoinTable(name = "student_teacher",
-               joinColumns = @JoinColumn(name = "student_id"),
-               inverseJoinColumns = @JoinColumn(name = "teacher_id"))
-    private Set<Teacher> teachers = new HashSet<>();
-
-    @ManyToOne
-    @JoinColumn(name = "address_id")
-    private Address address;
+    @JoinTable(
+        name = "student_teacher",
+        joinColumns = @JoinColumn(name = "student_id"),
+        inverseJoinColumns = @JoinColumn(name = "teacher_id")
+    )
+    private Set<Teacher> teachers;
+    
+    @OneToMany(mappedBy = "student")
+    private Set<Address> addresses;
 
 	public Long getId() {
 		return id;
@@ -54,13 +58,16 @@ public class Student {
 		this.teachers = teachers;
 	}
 
-	public Address getAddress() {
-		return address;
+	public Set<Address> getAddresses() {
+		return addresses;
 	}
 
-	public void setAddress(Address address) {
-		this.address = address;
+	public void setAddresses(Set<Address> addresses) {
+		this.addresses = addresses;
 	}
 
    
 }
+
+
+   
